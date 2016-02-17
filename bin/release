@@ -5,5 +5,4 @@ default_process_types:
   web: .meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js
   fanout_worker: env PROCESS_TYPE='fanout_worker' .meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js
   cleanup_fanout_worker: env PROCESS_TYPE='cleanup_fanout_worker' .meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js
-  initial_view_threshold_worker: env PROCESS_TYPE='initial_view_threshold_worker' .meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js
 EOF
